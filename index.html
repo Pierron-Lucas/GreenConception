@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <p>Key<span>corp</span></p>
+        </div>
+        <div class="nav-link">
+            <a href="strategie.html">Stratégie</a>
+            <a href="specifications.html">Spécifications</a>
+            <a href="uxui.html">UX/UI</a>
+            <a href="contenus.html">Contenus</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="frontend.html">Frontend</a>
+            <a href="backend.html">Backend</a>
+            <a href="hebergement.html">Hébergement</a>
+        </div>
+    </nav>
+
+    <div class="index">
+        <div class="index-txt">
+            <h2>Simple, Rapide, Efficace</h2>
+            <p>
+                Concevoir et monitorer un projet de développement de site web éco-conçu
+                n'a jamais été aussi simple. 
+            </p>
+            <a href="#container">Démarrer</a>
+        </div>
+        <div class="index-img">
+            <img src="src/index-back.png" alt="">
+        </div>
+    </div>
+
+    
+    <div class="basket">
+        <h2>Récapitulatif de votre panier</h2>
+        <button onclick="clearBasket()">Effacer le panier</button>
+        <div class="recap-basket">
+            <div class="strategie-section recap-basket-section">
+                <h3>Stratégie</h3>
+                <div id="basket-strategie-marker"></div>
+            </div>
+            <div class="spécifications-section recap-basket-section">
+                <h3>Spécifications</h3>
+                <div id="basket-specifications-marker"></div>
+            </div>
+            <div class="uxui-section recap-basket-section">
+                <h3>UX/UI</h3>
+                <div id="basket-uxui-marker"></div>
+            </div>
+            <div class="contenus-section recap-basket-section">
+                <h3>Contenus</h3>
+                <div id="basket-contenus-marker"></div>
+            </div>
+            <div class="architecture-section recap-basket-section">
+                <h3>Architecture</h3>
+                <div id="basket-architecture-marker"></div>
+            </div>
+            <div class="frontend-section recap-basket-section">
+                <h3>Frontend</h3>
+                <div id="basket-frontend-marker"></div>
+            </div>
+            <div class="backend-section recap-basket-section">
+                <h3>Backend</h3>
+                <div id="basket-backend-marker"></div>
+            </div>
+            <div class="hebergement-section recap-basket-section">
+                <h3>Hébergement</h3>
+                <div id="basket-hebergement-marker"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="container-section" id="strategie">
+            <h3>Stratégie</h3>
+            <p>L'étape de stratégie projet permet de déterminer 
+                la pertinence et les enjeux du projet.</p>
+            <button onclick="displayField(1)" class="btn-show"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+
+                <div id="strategie-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="specifications">
+            <h3>Spécifications</h3>
+            <p>Les spécifications regroupent les éléments de 
+                cadrage projet, les moyens mis en oeuvre, 
+                les objectifs et contraintes du projet sur toute
+                 la durée de vie du produit cible. Indépendamment 
+                 du type de gestion projet : AGILE ou cycle en V class...</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="specifications-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="uxui">
+            <h3>UX/UI</h3>
+            <p>Les étapes et méthodes de conception des services 
+                numériques pour définir les meilleures solutions 
+                d'interactions avec l'utilisateur.</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="uxui-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="contenus">
+            <h3>Contenus</h3>
+            <p>Tous les éléments d'un service numérique disponibles pour 
+                l'utilisateur final.</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="contenus-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="architecture">
+            <h3>Architecture</h3>
+            <p>Ensemble des composants en opération sur un terminal pour
+                permettre l'utilisation d'un service numérique.</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="architecture-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="frontend">
+            <h3>Frontend</h3>
+            <p>Elle définit l’ensemble des typologies de composants de 
+                services techniques communs qui s’interposent entre les 
+                composants applicatifs et les composants matériels pour 
+                gérer ces ressources physiques : composants de gestion 
+                des ressources...</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="frontend-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="backend">
+            <h3>Backend</h3>
+            <p>Le backend représente la traduction informatique des 
+                processus métiers, les moyens techniques et données 
+                mis en oeuvre pour leur utilisation, ainsi que toutes 
+                les interactions externes mises en oeuvre pour leur 
+                réalisation.</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="backend-marker"></div>
+            </div>
+        </div>
+        <div class="container-section" id="hebergement">
+            <h3>Hébergement</h3>
+            <p>Moyens mis en oeuvre pour permettre l'utilisation d'un 
+                service numérique par des utilisateurs distants.</p>
+            <button onclick="displayField(1)"><i class="fa-solid fa-plus"></i> Ajouter des étapes</button>
+            <div class="container-section-content">
+                <div id="hebergement-marker"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/data.json"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
